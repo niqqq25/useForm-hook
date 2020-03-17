@@ -72,5 +72,5 @@ export default function useForm(initialInputs, validationSchema) {
         }
     }
 
-    return [inputs, setValue, validateInputs, validateInput];
+    return [inputs, { setValue, validateInputs, validateInput, setError }];
 }

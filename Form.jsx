@@ -6,7 +6,7 @@ import useForm from "./useForm";
 import validationSchema from "./validationSchema";
 
 function Form() {
-    const [inputs, setValue, validateInputs, validateInput] = useForm(
+    const [inputs, { setValue, validateInputs, validateInput }] = useForm(
         { username: "", password: "", passwordRepeat: "" },
         validationSchema
     );
